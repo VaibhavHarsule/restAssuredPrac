@@ -18,6 +18,10 @@ public class BaseTest {
     public BaseTest() {
         this.authentication = generateTokenFromAPI(); // Changed from Authentication
     }
+    public String getAuthentication()
+    {
+        return generateTokenFromAPI();
+    }
 
     private String generateTokenFromAPI() {
         ObjectMapper objectMapper = new ObjectMapper(); // Renamed from ob

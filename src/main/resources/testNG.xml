@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test" parallel="methods">
+
+    <!-- Define a test for Calculator class -->
+    <test name="Test">
+        <!-- Define classes to include in this test -->
+        <classes>
+            <class name="org.restassured.testclasses.testClass">
+                <methods>
+                    <include name="testMethod"></include>
+                    <include name="getBookingID"></include>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>
